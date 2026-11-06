@@ -1,0 +1,11 @@
+services:
+  epaper:
+    build: .
+    network_mode: host
+    env_file: .env
+    environment:
+      EPAPER_BIN: /usr/local/bin/epaper
+      EPAPER_CONFIG: /data/dashboard.json
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

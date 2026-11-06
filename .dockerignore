@@ -1,0 +1,6 @@
+.env
+data
+**/target
+**/.embuild
+firmware
+.git
